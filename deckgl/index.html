@@ -10,34 +10,34 @@
   </style>
 </head>
 <body>
-<div id="app"></div>
+<div id="root"></div>
 </body>
 <script type="text/javascript" src="app.js"></script>
 <script type="text/javascript">
-  App.renderToDOM(document.getElementById('app'));
-
+  App.renderToDOM(document.getElementById('root'));
 </script>
 
 <div style = "
   position: fixed;
-	top: 10px;
+    top: 10px;
   right: 10px;
   float:right;
 ">
 
 <div style = "  height:45px;width:140px;
   background:LightSkyBlue;  padding-left: 5px;
-">Trajectories : <div id="tNumber"></div></div>
+">Points : <div id="tNumber"></div></div>
+
+<div style = "  height:45px;width:140px;
+  background:lightcoral;  padding-left: 5px;
+
+">Trains : <div id="stopped"></div></div>
 
 <div style = "  height:45px;width:140px;
   background:yellow;  padding-left: 5px;
 
 ">Time : <div id="timeDiv"></div></div>
 
-<div style = "  height:45px;width:140px;
-  background:lightcoral;  padding-left: 5px;
-
-">Stopped : <div id="stopped"></div></div>
 
 </div>
 

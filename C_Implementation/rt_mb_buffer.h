@@ -5,13 +5,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <unistd.h> // for test sleep()
+#include <unistd.h>
 
 typedef struct
 {
-   char* timestamp;
+   char* time_utc;
    char* latitude;
    char* longitude;
+   char* speed;
 } Position;
 
 typedef struct
@@ -29,8 +30,7 @@ typedef struct {
   size_t max_number_trajectory;
 } Trajectory_list;
 
-
-void init_position(Position *p, char* timestamp, char* latitude, char* longitude);
+void init_position(Position *p, char* time_utc, char* latitude, char* longitude, char* speed);
 
 void init_trajectory(Trajectory *t, char* vehicle_id, int max_buffer_position);
 
@@ -50,9 +50,9 @@ void free_trajectory_list(Trajectory_list *trajl);
 
 void insert_trajectory_mobilityDB(Trajectory *t);
 
-void parse_one_kafka_position(char* input_position, char* vehicleUniqueID, char* latitude, char* longitude, char* timestamp, const int vehicleUniqueIDLENGTH, const int latitudeLENGTH, const int longitudeLENGTH, const int timestampLENGTH);
+void parse_one_kafka_position(char* input_position, char* vehicleUniqueID, char* latitude, char* longitude, char* time_utc, char* speed, const int vehicleUniqueIDLENGTH, const int latitudeLENGTH, const int longitudeLENGTH, const int time_utcLENGTH, const int speedLENGTH);
 
-int check_position_is_valid(char* vehicleUniqueID, char* latitude, char* longitude, char* timestamp);
+int check_position_is_valid(char* vehicleUniqueID, char* latitude, char* longitude, char* time_utc, char* speed);
 
 int trajectory_already_exist(Trajectory_list* tl, char* vehicleUniqueID);
 

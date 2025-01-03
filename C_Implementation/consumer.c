@@ -43,8 +43,7 @@
 /* Typical include path would be <librdkafka/rdkafka.h>, but this program
  * is builtin from within the librdkafka source tree and thus differs. */
 //#include <librdkafka/rdkafka.h>
-#include "/opt/homebrew/Cellar/librdkafka/1.9.2/include/librdkafka/rdkafka.h"
-
+#include "rdkafka.h"
 
 static volatile sig_atomic_t run = 1;
 

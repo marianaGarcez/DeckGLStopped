@@ -1,0 +1,436 @@
+[
+  {
+    "time_utc": 1722520348,
+    "device_id": 3,
+    "gps_speed": 1.4671,
+    "gps_lat": 50.6456,
+    "gps_lon": 4.3658
+  },
+  {
+    "time_utc": 1722520348,
+    "device_id": 5,
+    "gps_speed": 94.9161,
+    "gps_lat": 51.3001,
+    "gps_lon": 4.4325
+  },
+  {
+    "time_utc": 1722520358,
+    "device_id": 5,
+    "gps_speed": 97.5431,
+    "gps_lat": 51.3024,
+    "gps_lon": 4.4318
+  },
+  {
+    "time_utc": 1722520358,
+    "device_id": 3,
+    "gps_speed": 0.0315,
+    "gps_lat": 50.6456,
+    "gps_lon": 4.3658
+  },
+  {
+    "time_utc": 1722520368,
+    "device_id": 5,
+    "gps_speed": 98.8548,
+    "gps_lat": 51.3049,
+    "gps_lon": 4.4311
+  },
+  {
+    "time_utc": 1722520368,
+    "device_id": 3,
+    "gps_speed": 0.0629,
+    "gps_lat": 50.6456,
+    "gps_lon": 4.3658
+  },
+  {
+    "time_utc": 1722520378,
+    "device_id": 3,
+    "gps_speed": 0.0222,
+    "gps_lat": 50.6456,
+    "gps_lon": 4.3658
+  },
+  {
+    "time_utc": 1722520378,
+    "device_id": 5,
+    "gps_speed": 93.9449,
+    "gps_lat": 51.3073,
+    "gps_lon": 4.4307
+  },
+  {
+    "time_utc": 1722520388,
+    "device_id": 5,
+    "gps_speed": 84.1066,
+    "gps_lat": 51.3095,
+    "gps_lon": 4.4309
+  },
+  {
+    "time_utc": 1722520388,
+    "device_id": 3,
+    "gps_speed": 0.0722,
+    "gps_lat": 50.6456,
+    "gps_lon": 4.3658
+  },
+  {
+    "time_utc": 1722520398,
+    "device_id": 3,
+    "gps_speed": 0.1314,
+    "gps_lat": 50.6456,
+    "gps_lon": 4.3658
+  },
+  {
+    "time_utc": 1722520399,
+    "device_id": 5,
+    "gps_speed": 74.9694,
+    "gps_lat": 51.3114,
+    "gps_lon": 4.4317
+  },
+  {
+    "time_utc": 1722520403,
+    "device_id": 4,
+    "gps_speed": 15.6399,
+    "gps_lat": 51.3114,
+    "gps_lon": 3.1354
+  },
+  {
+    "time_utc": 1722520408,
+    "device_id": 3,
+    "gps_speed": 0.0685,
+    "gps_lat": 50.6456,
+    "gps_lon": 4.3658
+  },
+  {
+    "time_utc": 1722520409,
+    "device_id": 5,
+    "gps_speed": 64.0082,
+    "gps_lat": 51.3131,
+    "gps_lon": 4.4325
+  },
+  {
+    "time_utc": 1722520414,
+    "device_id": 4,
+    "gps_speed": 15.6399,
+    "gps_lat": 51.3114,
+    "gps_lon": 3.1354
+  },
+  {
+    "time_utc": 1722520418,
+    "device_id": 3,
+    "gps_speed": 4.2347,
+    "gps_lat": 50.6456,
+    "gps_lon": 4.3658
+  },
+  {
+    "time_utc": 1722520419,
+    "device_id": 5,
+    "gps_speed": 50.2146,
+    "gps_lat": 51.3145,
+    "gps_lon": 4.4333
+  },
+  {
+    "time_utc": 1722520424,
+    "device_id": 4,
+    "gps_speed": 15.6399,
+    "gps_lat": 51.3114,
+    "gps_lon": 3.1354
+  },
+  {
+    "time_utc": 1722520428,
+    "device_id": 3,
+    "gps_speed": 16.6944,
+    "gps_lat": 50.6458,
+    "gps_lon": 4.3661
+  },
+  {
+    "time_utc": 1722520429,
+    "device_id": 5,
+    "gps_speed": 14.023,
+    "gps_lat": 51.3159,
+    "gps_lon": 4.4341
+  },
+  {
+    "time_utc": 1722520434,
+    "device_id": 4,
+    "gps_speed": 15.6399,
+    "gps_lat": 51.3114,
+    "gps_lon": 3.1354
+  },
+  {
+    "time_utc": 1722520439,
+    "device_id": 3,
+    "gps_speed": 32.9467,
+    "gps_lat": 50.6463,
+    "gps_lon": 4.3667
+  },
+  {
+    "time_utc": 1722520439,
+    "device_id": 5,
+    "gps_speed": 14.023,
+    "gps_lat": 51.3159,
+    "gps_lon": 4.4341
+  },
+  {
+    "time_utc": 1722520444,
+    "device_id": 4,
+    "gps_speed": 21.88,
+    "gps_lat": 51.311,
+    "gps_lon": 3.1359
+  },
+  {
+    "time_utc": 1722520449,
+    "device_id": 5,
+    "gps_speed": 14.023,
+    "gps_lat": 51.3159,
+    "gps_lon": 4.4341
+  },
+  {
+    "time_utc": 1722520454,
+    "device_id": 4,
+    "gps_speed": 28.2273,
+    "gps_lat": 51.3105,
+    "gps_lon": 3.1365
+  },
+  {
+    "time_utc": 1722520459,
+    "device_id": 3,
+    "gps_speed": 48.8641,
+    "gps_lat": 50.6471,
+    "gps_lon": 4.3678
+  },
+  {
+    "time_utc": 1722520464,
+    "device_id": 4,
+    "gps_speed": 33.4702,
+    "gps_lat": 51.3098,
+    "gps_lon": 3.1371
+  },
+  {
+    "time_utc": 1722520469,
+    "device_id": 3,
+    "gps_speed": 48.8641,
+    "gps_lat": 50.6471,
+    "gps_lon": 4.3678
+  },
+  {
+    "time_utc": 1722520474,
+    "device_id": 4,
+    "gps_speed": 36.8983,
+    "gps_lat": 51.3091,
+    "gps_lon": 3.138
+  },
+  {
+    "time_utc": 1722520479,
+    "device_id": 3,
+    "gps_speed": 48.8641,
+    "gps_lat": 50.6471,
+    "gps_lon": 4.3678
+  },
+  {
+    "time_utc": 1722520484,
+    "device_id": 4,
+    "gps_speed": 38.8019,
+    "gps_lat": 51.3085,
+    "gps_lon": 3.1391
+  },
+  {
+    "time_utc": 1722520494,
+    "device_id": 4,
+    "gps_speed": 40.2005,
+    "gps_lat": 51.3078,
+    "gps_lon": 3.1403
+  },
+  {
+    "time_utc": 1722520504,
+    "device_id": 4,
+    "gps_speed": 41.1255,
+    "gps_lat": 51.3071,
+    "gps_lon": 3.1415
+  },
+  {
+    "time_utc": 1722520515,
+    "device_id": 4,
+    "gps_speed": 52.2311,
+    "gps_lat": 51.3055,
+    "gps_lon": 3.1441
+  },
+  {
+    "time_utc": 1722520520,
+    "device_id": 5,
+    "gps_speed": 0.0426,
+    "gps_lat": 51.316,
+    "gps_lon": 4.4342
+  },
+  {
+    "time_utc": 1722520525,
+    "device_id": 4,
+    "gps_speed": 60.1694,
+    "gps_lat": 51.3046,
+    "gps_lon": 3.1457
+  },
+  {
+    "time_utc": 1722520530,
+    "device_id": 5,
+    "gps_speed": 0.0426,
+    "gps_lat": 51.316,
+    "gps_lon": 4.4342
+  },
+  {
+    "time_utc": 1722520535,
+    "device_id": 4,
+    "gps_speed": 68.0671,
+    "gps_lat": 51.3035,
+    "gps_lon": 3.1476
+  },
+  {
+    "time_utc": 1722520540,
+    "device_id": 5,
+    "gps_speed": 0.0426,
+    "gps_lat": 51.316,
+    "gps_lon": 4.4342
+  },
+  {
+    "time_utc": 1722520545,
+    "device_id": 4,
+    "gps_speed": 75.9518,
+    "gps_lat": 51.3022,
+    "gps_lon": 3.1497
+  },
+  {
+    "time_utc": 1722520550,
+    "device_id": 5,
+    "gps_speed": 0.0426,
+    "gps_lat": 51.316,
+    "gps_lon": 4.4342
+  },
+  {
+    "time_utc": 1722520555,
+    "device_id": 4,
+    "gps_speed": 83.7088,
+    "gps_lat": 51.3008,
+    "gps_lon": 3.152
+  },
+  {
+    "time_utc": 1722520559,
+    "device_id": 3,
+    "gps_speed": 60.5413,
+    "gps_lat": 50.6788,
+    "gps_lon": 4.3749
+  },
+  {
+    "time_utc": 1722520560,
+    "device_id": 5,
+    "gps_speed": 0.0407,
+    "gps_lat": 51.316,
+    "gps_lon": 4.4342
+  },
+  {
+    "time_utc": 1722520565,
+    "device_id": 4,
+    "gps_speed": 83.7088,
+    "gps_lat": 51.3008,
+    "gps_lon": 3.152
+  },
+  {
+    "time_utc": 1722520569,
+    "device_id": 3,
+    "gps_speed": 60.5413,
+    "gps_lat": 50.6788,
+    "gps_lon": 4.3749
+  },
+  {
+    "time_utc": 1722520570,
+    "device_id": 5,
+    "gps_speed": 1.7816,
+    "gps_lat": 51.3161,
+    "gps_lon": 4.4342
+  },
+  {
+    "time_utc": 1722520580,
+    "device_id": 5,
+    "gps_speed": 7.783,
+    "gps_lat": 51.3162,
+    "gps_lon": 4.4342
+  },
+  {
+    "time_utc": 1722520580,
+    "device_id": 3,
+    "gps_speed": 60.5413,
+    "gps_lat": 50.6788,
+    "gps_lon": 4.3749
+  },
+  {
+    "time_utc": 1722520585,
+    "device_id": 4,
+    "gps_speed": 83.7088,
+    "gps_lat": 51.3008,
+    "gps_lon": 3.152
+  },
+  {
+    "time_utc": 1722520590,
+    "device_id": 3,
+    "gps_speed": 60.5413,
+    "gps_lat": 50.6788,
+    "gps_lon": 4.3749
+  },
+  {
+    "time_utc": 1722520591,
+    "device_id": 5,
+    "gps_speed": 14.3061,
+    "gps_lat": 51.3165,
+    "gps_lon": 4.4344
+  },
+  {
+    "time_utc": 1722520600,
+    "device_id": 3,
+    "gps_speed": 60.0418,
+    "gps_lat": 50.6803,
+    "gps_lon": 4.3751
+  },
+  {
+    "time_utc": 1722520607,
+    "device_id": 1,
+    "gps_speed": 26.2793,
+    "gps_lat": 50.8563,
+    "gps_lon": 4.361
+  },
+  {
+    "time_utc": 1722520610,
+    "device_id": 3,
+    "gps_speed": 54.0015,
+    "gps_lat": 50.6817,
+    "gps_lon": 4.3753
+  },
+  {
+    "time_utc": 1722520611,
+    "device_id": 5,
+    "gps_speed": 27.8684,
+    "gps_lat": 51.3175,
+    "gps_lon": 4.4349
+  },
+  {
+    "time_utc": 1722520617,
+    "device_id": 1,
+    "gps_speed": 26.2793,
+    "gps_lat": 50.8563,
+    "gps_lon": 4.361
+  },
+  {
+    "time_utc": 1722520620,
+    "device_id": 3,
+    "gps_speed": 41.2051,
+    "gps_lat": 50.6829,
+    "gps_lon": 4.3755
+  },
+  {
+    "time_utc": 1722520621,
+    "device_id": 5,
+    "gps_speed": 36.1731,
+    "gps_lat": 51.3182,
+    "gps_lon": 4.4353
+  },
+  {
+    "time_utc": 1722520627,
+    "device_id": 1,
+    "gps_speed": 26.2793,
+    "gps_lat": 50.8563,
+    "gps_lon": 4.361
+  }
+]
