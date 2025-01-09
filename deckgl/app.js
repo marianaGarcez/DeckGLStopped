@@ -1,94 +1,99 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { render } from "react-dom";
 import { StaticMap } from "react-map-gl";
 import DeckGL from "@deck.gl/react";
-import { IconLayer } from "@deck.gl/layers";
+import { ScatterplotLayer } from "@deck.gl/layers";
 import FPSStats from "react-fps-stats";
 
-// Initial viewport settings
 const INITIAL_VIEW_STATE = {
   longitude: 4.37,
   latitude: 50.8562,
-  zoom: 12,
-  pitch: 45,
-  bearing: 0,
+  zoom: 10,
+  pitch: 0,
+  bearing: 0
 };
 
-// Map style URL
 const MAP_STYLE = "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json";
+const DATA_URL = "http://localhost:8003/outputConsumer.json";
+const UPDATE_INTERVAL = 1000;
 
-// Data source URL
-const DATA_URL = "http://localhost:8003/output.json";
-
-// Icon mapping for markers
-const ICON_MAPPING = {
-  marker: { x: 0, y: 0, width: 128, height: 128, mask: true },
-};
-
-// Main App component
 const App = () => {
   const [data, setData] = useState([]);
   const [viewState, setViewState] = useState(INITIAL_VIEW_STATE);
+  const [currentTime, setCurrentTime] = useState(null);
 
-  // Fetch data on component mount
-  useEffect(() => {
-    fetch(DATA_URL)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Fetched data:", data);
-        setData(data);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+  const fetchData = useCallback(async () => {
+    try {
+      const response = await fetch(DATA_URL);
+      const newData = await response.json();
+      
+      const validData = newData.map(d => ({
+        ...d,
+        coordinates: [Number(d.gps_lon), Number(d.gps_lat)]
+      })).filter(d => 
+        !isNaN(d.coordinates[0]) && 
+        !isNaN(d.coordinates[1])
+      );
+
+      const latestTime = Math.max(...validData.map(d => d.time_utc));
+      
+      setData(validData);
+      setCurrentTime(latestTime);
+      
+      document.getElementById('tNumber').textContent = validData.length;
+      document.getElementById('stopped').textContent = 
+        validData.filter(d => d.gps_speed < 1).length;
+      document.getElementById('timeDiv').textContent = latestTime;
+      
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   }, []);
 
-  // Create icon layer
+  useEffect(() => {
+    fetchData();
+    const interval = setInterval(fetchData, UPDATE_INTERVAL);
+    return () => clearInterval(interval);
+  }, [fetchData]);
+
   const layers = [
-    new IconLayer({
-      id: "icon-layer",
+    new ScatterplotLayer({
+      id: 'train-layer',
       data,
       pickable: true,
-      iconAtlas: "https://deck.gl/images/icon-atlas.png",
-      iconMapping: ICON_MAPPING,
-      getIcon: () => "marker",
-      sizeScale: 15,
-      getPosition: d => [d.gps_lon, d.gps_lat],
-      getSize: () => 5,
-      getColor: d => [Math.sqrt(d.gps_speed) * 255, 140, 0],
+      opacity: 0.8,
+      stroked: true,
+      filled: true,
+      radiusScale: 6,
+      radiusMinPixels: 3,
+      radiusMaxPixels: 30,
+      lineWidthMinPixels: 1,
+      getPosition: d => d.coordinates,
+      getRadius: d => 5,
+      getFillColor: d => [
+        0, // Blue component
+        0,
+        255, // Full blue
+        d.gps_speed < 1 ? 128 : 255 // Alpha based on speed
+      ],
+      getLineColor: d => [255, 255, 255], // White border
+      updateTriggers: {
+        getFillColor: [data],
+        getPosition: [data]
+      }
     })
   ];
 
   return (
-    <>
-      <DeckGL
-        initialViewState={INITIAL_VIEW_STATE}
-        controller={true}
-        layers={layers}
-        onViewStateChange={({ viewState }) => setViewState(viewState)}
-      >
-        <StaticMap
-          mapStyle={MAP_STYLE}
-          viewState={viewState}
-        />
-      </DeckGL>
+    <DeckGL
+      initialViewState={INITIAL_VIEW_STATE}
+      controller={true}
+      layers={layers}
+    >
+      <StaticMap mapStyle={MAP_STYLE} />
       <FPSStats />
-      <div style={{
-        position: 'absolute',
-        top: '10px',
-        right: '10px',
-        padding: '10px',
-        background: 'white',
-        borderRadius: '4px'
-      }}>
-        <div>Points: {data.length}</div>
-      </div>
-    </>
+    </DeckGL>
   );
 };
 
-// Create root element
-const rootElement = document.createElement('div');
-rootElement.id = 'root';
-document.body.appendChild(rootElement);
-
-// Render the app
 render(<App />, document.getElementById('root'));
